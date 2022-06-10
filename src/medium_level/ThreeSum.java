@@ -1,3 +1,5 @@
+package medium_level;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -8,7 +10,7 @@ import java.util.Set;
 /**
  * This code has a O(n^3) Time complexity solution because of the 3 loops to arrive to the result.
  */
-class ThreeSum {
+public class ThreeSum {
 
   public List<List<Integer>> threeSum(int[] nums) {
     List<List<Integer>> triplets = new ArrayList<>();

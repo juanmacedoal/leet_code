@@ -19,8 +19,8 @@ public class IntegerPalindrome {
     boolean palindrome = false;
 
     while (x2 > 0) {
-      System.out.println(
-          "list item: " + integerList.get(integerList.size() - cont) + " division: " + x2 % 10);
+      //System.out.println(
+      //    "list item: " + integerList.get(integerList.size() - cont) + " division: " + x2 % 10);
       if (integerList.get(integerList.size() - cont).equals(x2 % 10)) palindrome = true;
       else return false;
       x2 = x2 / 10;

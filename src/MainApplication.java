@@ -1,6 +1,7 @@
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
 import easy_level.TwoSum;
+import easy_level.ValidParentheses;
 import medium_level.ThreeSum;
 
 public class MainApplication {
@@ -18,12 +19,9 @@ public class MainApplication {
     IntegerPalindrome integerPalindrome = new IntegerPalindrome();
     System.out.println("Is an integer palindrome: " + integerPalindrome.isPalindrome(121));
     LongPrefix longPrefix = new LongPrefix();
-    //System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
-    System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"flower","flower","flower"}));
-    System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"a","ac"}));
-    System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"reflower","flow","flight"}));
-    System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"cir","car"}));
-    System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"c","acc", "ccc"}));
+    System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
+    ValidParentheses validParentheses = new ValidParentheses();
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("{[]}"));
 
   }
 }

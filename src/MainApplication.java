@@ -21,7 +21,15 @@ public class MainApplication {
     LongPrefix longPrefix = new LongPrefix();
     System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
     ValidParentheses validParentheses = new ValidParentheses();
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("(){}}{"));
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("([)]"));
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("("));
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("(("));
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("({{{{}}}))"));
     System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("{[]}"));
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("[]"));
+    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("([)"));
+
 
   }
 }

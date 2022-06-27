@@ -1,5 +1,6 @@
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
+import easy_level.RemoveDuplicates;
 import easy_level.TwoSum;
 import easy_level.ValidParentheses;
 import medium_level.ThreeSum;
@@ -21,14 +22,9 @@ public class MainApplication {
     LongPrefix longPrefix = new LongPrefix();
     System.out.println("LongPrefix result: " + longPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
     ValidParentheses validParentheses = new ValidParentheses();
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("(){}}{"));
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("([)]"));
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("("));
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("(("));
     System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("({{{{}}}))"));
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("{[]}"));
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("[]"));
-    System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("([)"));
+    RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+    removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4});
 
 
   }

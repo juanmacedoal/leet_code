@@ -24,7 +24,8 @@ public class MainApplication {
     ValidParentheses validParentheses = new ValidParentheses();
     System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("({{{{}}}))"));
     RemoveDuplicates removeDuplicates = new RemoveDuplicates();
-    removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4});
+    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,2}));
+    //System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
 
 
   }

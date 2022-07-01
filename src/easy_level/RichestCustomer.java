@@ -26,6 +26,8 @@ public class RichestCustomer {
       }
       if(wealth > richest) richest = wealth;
     }
+    String a;
+
     return richest;
   }
 }

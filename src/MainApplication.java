@@ -5,6 +5,7 @@ import easy_level.FinalValueOfVariableAfterPerformingOperations;
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
 import easy_level.RemoveDuplicates;
+import easy_level.RichestCustomer;
 import easy_level.RunningSum;
 import easy_level.TreeNodeSum;
 import easy_level.TwoSum;
@@ -49,6 +50,7 @@ public class MainApplication {
     System.out.println("The result of Build array from permutation:"  + Arrays.toString(new BuildArrayPermutation().buildArray(new int[]{0,2,1,5,3,4})));
     System.out.println("The result of final value: " + new FinalValueOfVariableAfterPerformingOperations().finalValueAfterOperations(
       new String[]{"--X","X++","X++"}));
+    System.out.println("The result of the richest man: " + new RichestCustomer().maximumWealth(new int[][]{{1,2},{4,5}}));
 
   }
 }

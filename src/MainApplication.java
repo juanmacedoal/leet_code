@@ -1,5 +1,7 @@
+import easy_level.BuildArrayPermutation;
 import easy_level.ConcatenationArray;
 import easy_level.DefangingAnIPAddres;
+import easy_level.FinalValueOfVariableAfterPerformingOperations;
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
 import easy_level.RemoveDuplicates;
@@ -30,6 +32,11 @@ public class MainApplication {
     System.out.println("The result of the valid parentheses is: " + validParentheses.isValid("({{{{}}}))"));
     RemoveDuplicates removeDuplicates = new RemoveDuplicates();
     System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,2,2}));
+    /*
+    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,1}));
+    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,2}));
+    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
+    */
     RunningSum runningSum = new RunningSum();
     System.out.println("The correct result of running sum is: " +
       Arrays.equals(runningSum.runningSum(new int[]{1,2,3,4}), new int[]{1,3,6,10}));
@@ -38,13 +45,10 @@ public class MainApplication {
     DefangingAnIPAddres defangingAnIPAddres = new DefangingAnIPAddres();
     System.out.println("The result of defanging an ip address 1.1.1.1 need to be equal 1[.]1[.]1[.]1 is"
       + defangingAnIPAddres.defangIPaddr("1.1.1.1").equals("1[.]1[.]1[.]1"));
-    System.out.println("The result of the concatenation arrays: " + new ConcatenationArray().getConcatenation(new int[]{1,2,3}));
-/*
-    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,1}));
-    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,2}));
-    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
-*/
-
+    System.out.println("The result of the concatenation arrays: " + Arrays.toString(new ConcatenationArray().getConcatenation(new int[]{1,2,3})));
+    System.out.println("The result of Build array from permutation:"  + Arrays.toString(new BuildArrayPermutation().buildArray(new int[]{0,2,1,5,3,4})));
+    System.out.println("The result of final value: " + new FinalValueOfVariableAfterPerformingOperations().finalValueAfterOperations(
+      new String[]{"--X","X++","X++"}));
 
   }
 }

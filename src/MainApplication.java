@@ -61,7 +61,6 @@ public class MainApplication {
     System.out.println("The result of final value: " + new FinalValueOfVariableAfterPerformingOperations().finalValueAfterOperations(
       new String[]{"--X","X++","X++"}));
     System.out.println("The result of the richest man: " + new RichestCustomer().maximumWealth(new int[][]{{1,2},{4,5}}));
-    System.out.println("The result of the maximum of words: " + new MostWordsFound().mostWordsFound());
     System.out.println(
         "The result of defanging an ip address 1.1.1.1 need to be equal 1[.]1[.]1[.]1 is"
             + defangingAnIPAddres.defangIPaddr("1.1.1.1").equals("1[.]1[.]1[.]1"));
@@ -76,8 +75,9 @@ public class MainApplication {
         "The result of final value: "
             + new FinalValueOfVariableAfterPerformingOperations()
                 .finalValueAfterOperations(new String[] {"--X", "X++", "X++"}));
+    System.out.println("The result of the maximum of words: " + new MostWordsFound().mostWordsFound(new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}));
     System.out.println(
-        "The result of the remove one element: "
-            + new RemoveOneElement().canBeIncreasing(new int[] {1, 2, 10, 5, 7}));
+      "The result of the remove one element: "
+        + new RemoveOneElement().canBeIncreasing(new int[] {1, 2, 10, 5, 7}));
   }
 }

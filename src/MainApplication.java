@@ -4,6 +4,7 @@ import easy_level.DefangingAnIPAddres;
 import easy_level.FinalValueOfVariableAfterPerformingOperations;
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
+import easy_level.MostWordsFound;
 import easy_level.RemoveDuplicates;
 import easy_level.RichestCustomer;
 import easy_level.RunningSum;
@@ -51,6 +52,7 @@ public class MainApplication {
     System.out.println("The result of final value: " + new FinalValueOfVariableAfterPerformingOperations().finalValueAfterOperations(
       new String[]{"--X","X++","X++"}));
     System.out.println("The result of the richest man: " + new RichestCustomer().maximumWealth(new int[][]{{1,2},{4,5}}));
+    System.out.println("The result of the maximum of words: " + new MostWordsFound().mostWordsFound());
 
   }
 }

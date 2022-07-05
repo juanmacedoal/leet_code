@@ -38,20 +38,13 @@ package easy_level;
  */
 public class RemoveElementRepeated {
   public int removeElement(int[] nums, int val) {
-    for(int i = 0; i+1 < nums.length; i++) {
-      for(int j = 0; j+1 < nums.length; j++)
-      if(nums[j] == val) {
-        int aux = nums[j];
-        nums[j] = nums[j+1];
-        nums[j+1] = aux;
+    int j = 0;
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] != val) {
+        nums[j] = nums[i];
+        j++;
       }
     }
-    int cont = 0;
-    for(int i = 0; i < nums.length; i++) {
-      if(nums[i] != val) {
-        cont++;
-      }
-    }
-    return cont;
+    return j;
   }
 }

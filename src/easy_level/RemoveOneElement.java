@@ -14,6 +14,32 @@ import java.util.List;
  * Output: true
  * Explanation: By removing 10 at index 2 from nums, it becomes [1,2,5,7].
  * [1,2,5,7] is strictly increasing, so return true.
+ *
+ * ------------BETTER SOLUTION-------------
+ *
+ * // One Pass Solution
+ * // When we find decreasing or equal (nums[i] <= nums[i-1]):
+ * // If nums[i] > nums[i-2], remove nums[i-1] (Ignore nums[i-1]).
+ * // Otherwise, remove nums[i] (Set nums[i] = nums[i-1]).
+ * // Time complexity: O(N)
+ * class Solution {
+ *     public boolean canBeIncreasing(int[] nums) {
+ *         if (nums == null || nums.length <= 2) return true;
+ *         boolean removed = false;
+ *         for (int i = 1; i < nums.length; i++) {
+ *             if (nums[i] <= nums[i-1]) {
+ *                 if (removed) {
+ *                     return false;
+ *                 }
+ *                 removed = true;
+ *                 if (i > 1 && nums[i] <= nums[i - 2]) {
+ *                     nums[i] = nums[i-1];
+ *                 }
+ *             }
+ *         }
+ *         return true;
+ *     }
+ * }
  */
 public class RemoveOneElement {
 

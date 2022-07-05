@@ -75,9 +75,11 @@ public class MainApplication {
         "The result of final value: "
             + new FinalValueOfVariableAfterPerformingOperations()
                 .finalValueAfterOperations(new String[] {"--X", "X++", "X++"}));
-    System.out.println("The result of the maximum of words: " + new MostWordsFound().mostWordsFound(new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}));
-    System.out.println(
-      "The result of the remove one element: "
-        + new RemoveOneElement().canBeIncreasing(new int[] {1, 2, 10, 5, 7}));
+    //System.out.println("The result of the maximum of words: " + new MostWordsFound().mostWordsFound(new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}));
+    //System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{105,924,32,968}));
+    //System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{1,2, 10, 5, 7}));
+    System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{13,205,553,527,790,238}));
+
+
   }
 }

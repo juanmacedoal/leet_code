@@ -2,6 +2,9 @@ package easy_level;
 
 import java.util.Arrays;
 
+/**
+ *
+ */
 public class RemoveDuplicates {
 
   public int removeDuplicates(int[] nums) {

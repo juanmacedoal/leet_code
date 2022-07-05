@@ -6,6 +6,7 @@ import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
 import easy_level.MostWordsFound;
 import easy_level.RemoveDuplicates;
+import easy_level.RemoveElementRepeated;
 import easy_level.RichestCustomer;
 import easy_level.RemoveOneElement;
 import easy_level.RunningSum;
@@ -75,11 +76,8 @@ public class MainApplication {
         "The result of final value: "
             + new FinalValueOfVariableAfterPerformingOperations()
                 .finalValueAfterOperations(new String[] {"--X", "X++", "X++"}));
-    //System.out.println("The result of the maximum of words: " + new MostWordsFound().mostWordsFound(new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}));
-    //System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{105,924,32,968}));
-    //System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{1,2, 10, 5, 7}));
     System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{13,205,553,527,790,238}));
-
+    System.out.println("The result of the remove repeated element is: " + new RemoveElementRepeated().removeElement(new int[]{0,1,2,2,3,0,4,2}, 2));
 
   }
 }

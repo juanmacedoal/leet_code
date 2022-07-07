@@ -2,6 +2,7 @@ import easy_level.BuildArrayPermutation;
 import easy_level.ConcatenationArray;
 import easy_level.DefangingAnIPAddres;
 import easy_level.FinalValueOfVariableAfterPerformingOperations;
+import easy_level.IndexOf;
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
 import easy_level.MostWordsFound;
@@ -78,6 +79,9 @@ public class MainApplication {
                 .finalValueAfterOperations(new String[] {"--X", "X++", "X++"}));
     System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{13,205,553,527,790,238}));
     System.out.println("The result of the remove repeated element is: " + new RemoveElementRepeated().removeElement(new int[]{0,1,2,2,3,0,4,2}, 2));
+    System.out.println("The result of indexOf: " + new IndexOf().strStr("mississippi", "issipi"));
+
+
 
   }
 }

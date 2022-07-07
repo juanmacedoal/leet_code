@@ -28,8 +28,6 @@ public class FinalValueOfVariableAfterPerformingOperations {
     for(int i = 0; i < operations.length; i++) {
       if(operations[i].contains("++")) x++;
       else if(operations[i].contains("--")) x--;
-
-      System.out.println(x);
     }
     return x;
   }

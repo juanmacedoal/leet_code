@@ -6,6 +6,7 @@ import easy_level.IndexOf;
 import easy_level.IntegerPalindrome;
 import easy_level.LongPrefix;
 import easy_level.MostWordsFound;
+import easy_level.PlusOne;
 import easy_level.RemoveDuplicates;
 import easy_level.RemoveElementRepeated;
 import easy_level.RichestCustomer;
@@ -38,15 +39,6 @@ public class MainApplication {
     ValidParentheses validParentheses = new ValidParentheses();
     System.out.println(
         "The result of the valid parentheses is: " + validParentheses.isValid("({{{{}}}))"));
-    RemoveDuplicates removeDuplicates = new RemoveDuplicates();
-    System.out.println(
-        "The result of removing duplicates: "
-            + removeDuplicates.removeDuplicates(new int[] {1, 2, 2}));
-    /*
-    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,1}));
-    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,2}));
-    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
-    */
     RunningSum runningSum = new RunningSum();
     System.out.println(
         "The correct result of running sum is: "
@@ -80,7 +72,11 @@ public class MainApplication {
     System.out.println("The result of the remove one: " + new RemoveOneElement().canBeIncreasing(new int[]{13,205,553,527,790,238}));
     System.out.println("The result of the remove repeated element is: " + new RemoveElementRepeated().removeElement(new int[]{0,1,2,2,3,0,4,2}, 2));
     System.out.println("The result of indexOf: " + new IndexOf().strStr("mississippi", "issipi"));
-
+    RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+  //  System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,1}));
+  //  System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,2}));
+    System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
+    System.out.println("The result of plusOne: " + new PlusOne().plusOne(new int[]{8,9,9,9}).equals(new int[]{1,0,0}));
 
 
   }

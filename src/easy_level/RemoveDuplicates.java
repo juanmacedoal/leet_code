@@ -3,35 +3,56 @@ package easy_level;
 import java.util.Arrays;
 
 /**
+ *Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
  *
+ * Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
+ *
+ * Return k after placing the final result in the first k slots of nums.
+ *
+ * Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
+ *
+ * Custom Judge:
+ *
+ * The judge will test your solution with the following code:
+ *
+ * int[] nums = [...]; // Input array
+ * int[] expectedNums = [...]; // The expected answer with correct length
+ *
+ * int k = removeDuplicates(nums); // Calls your implementation
+ *
+ * assert k == expectedNums.length;
+ * for (int i = 0; i < k; i++) {
+ *     assert nums[i] == expectedNums[i];
+ * }
+ * If all assertions pass, then your solution will be accepted.
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: nums = [1,1,2]
+ * Output: 2, nums = [1,2,_]
+ * Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+ * It does not matter what you leave beyond the returned k (hence they are underscores).
  */
 public class RemoveDuplicates {
 
   public int removeDuplicates(int[] nums) {
 
-    int repetitions = 0;
-    int allRepeated = 0;
-    if(nums.length == 1) return 1;
-    for(int i = 0; i + 1 < nums.length; i++) {
-      if(nums[i] == nums[i+1]) allRepeated++;
-    }
-    if(allRepeated == nums.length - 1 || (nums.length - allRepeated - 1) == 1) return 1;
-    for(int i = 0; i + 1 < nums.length; i++) {
-    int inWhile = 0;
-      while(nums[i] == nums[i + 1] && i + 1 != (nums.length-1)) {
-          for(int j = i + 1; j + 1 < nums.length; j++) {
-            int aux = nums[j];
-            nums[j] = nums[j + 1];
-            nums[j + 1] = aux;
-          }
-          if(inWhile == 0) inWhile ++;
+    int k = 0;
+    for(int i = 1; i < nums.length; i++){
+      int j = i;
+      if(i+1 <= nums.length && nums[i] == nums[i-1]) {
+        while(j < nums.length) {
+          int aux = nums[j];
+          nums[j] = nums[j-1];
+          nums[j-1] = aux;
+          j++;
+        }
       }
-      repetitions = repetitions + inWhile;
-      if(nums[i] == nums[i + 1] && repetitions == 0) repetitions = 1;
     }
-    System.out.println("nums: " + Arrays.toString(nums));
 
-    return nums.length - repetitions;
+    return nums.length - k;
   }
 }
 

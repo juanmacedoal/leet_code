@@ -78,7 +78,7 @@ public class MainApplication {
   //  System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{1,1,2}));
     System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
     System.out.println("The result of plusOne: " + new PlusOne().plusOne(new int[]{8,9,9,9}).equals(new int[]{1,0,0}));
-    System.out.println("The result of add binary: " + new AddBinary().addBinary("11", "1"));
+    System.out.println("The result of add binary: " + new AddBinary().addBinary("100", "110010"));
 
   }
 }

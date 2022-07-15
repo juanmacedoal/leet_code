@@ -1,4 +1,4 @@
-package easyLevel;
+package com.leetCode.easyLevel;
 
 public class MergeTwoSortedLists {
 }

@@ -1,4 +1,4 @@
-package easyLevel;
+package com.leetCode.easyLevel;
 
 /**
  * Implement strStr().

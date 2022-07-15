@@ -1,4 +1,4 @@
-package java.medium_level;
+package com.leetCode.mediumLevel;
 
 import java.util.ArrayList;
 import java.util.Arrays;

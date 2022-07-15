@@ -1,4 +1,4 @@
-package easyLevel;
+package com.leetCode.easyLevel;
 
 import java.util.ArrayList;
 import java.util.List;

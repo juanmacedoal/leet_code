@@ -1,24 +1,25 @@
-package java;
+package com.leetCode;
 
-import easyLevel.AddBinary;
-import easyLevel.BuildArrayPermutation;
-import easyLevel.ConcatenationArray;
-import easyLevel.DefangingAnIPAddres;
-import easyLevel.FinalValueOfVariableAfterPerformingOperations;
-import easyLevel.IndexOf;
-import easyLevel.IntegerPalindrome;
-import easyLevel.LongPrefix;
-import easyLevel.PlusOne;
-import easyLevel.RemoveDuplicates;
-import easyLevel.RemoveElementRepeated;
-import easyLevel.RichestCustomer;
-import easyLevel.RemoveOneElement;
-import easyLevel.RunningSum;
-import easyLevel.TreeNodeSum;
-import easyLevel.TwoSum;
-import easyLevel.ValidParentheses;
-import java.medium_level.ThreeSum;
+import com.leetCode.easyLevel.AddBinary;
+import com.leetCode.easyLevel.BuildArrayPermutation;
+import com.leetCode.easyLevel.ConcatenationArray;
+import com.leetCode.easyLevel.DefangingAnIPAddres;
+import com.leetCode.easyLevel.FinalValueOfVariableAfterPerformingOperations;
+import com.leetCode.easyLevel.IndexOf;
+import com.leetCode.easyLevel.IntegerPalindrome;
+import com.leetCode.easyLevel.LongPrefix;
+import com.leetCode.easyLevel.PlusOne;
+import com.leetCode.easyLevel.RemoveDuplicates;
+import com.leetCode.easyLevel.RemoveElementRepeated;
+import com.leetCode.easyLevel.RichestCustomer;
+import com.leetCode.easyLevel.RemoveOneElement;
+import com.leetCode.easyLevel.RunningSum;
+import com.leetCode.easyLevel.TreeNodeSum;
+import com.leetCode.easyLevel.TwoSum;
+import com.leetCode.easyLevel.ValidParentheses;
+import com.leetCode.mediumLevel.ThreeSum;
 
+import javax.swing.*;
 import java.util.Arrays;
 
 public class MainApplication {
@@ -80,6 +81,5 @@ public class MainApplication {
     System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
     System.out.println("The result of plusOne: " + new PlusOne().plusOne(new int[]{8,9,9,9}).equals(new int[]{1,0,0}));
     System.out.println("The result of add binary: " + new AddBinary().addBinary("100", "110010"));
-
   }
 }

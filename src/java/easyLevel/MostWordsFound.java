@@ -1,4 +1,4 @@
-package easy_level;
+package easyLevel;
 
 public class MostWordsFound {
   public int mostWordsFound(String[] sentences) {

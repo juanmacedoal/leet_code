@@ -1,4 +1,4 @@
-package easy_level;
+package easyLevel;
 
 /**
  * You are given the root of a binary tree that consists of exactly 3 nodes: the root, its left child, and its right child.

@@ -1,4 +1,4 @@
-package easy_level;
+package easyLevel;
 
 /**
  * Implement strStr().
@@ -19,10 +19,10 @@ package easy_level;
  * Output: 2
  */
 public class IndexOf {
-  public boolean strStr(String haystack, String needle) {
+  public int strStr(String haystack, String needle) {
 
-    if(needle == haystack) return haystack.indexOf(needle) == 0;
-    if(needle.length() > haystack.length()) return haystack.indexOf(needle) == -1;
+    if(needle == haystack) return 0;
+    if(needle.length() > haystack.length()) return -1;
     int indexOf = 0;
     int cont = 0;
     int cont2 = 0;
@@ -43,6 +43,6 @@ public class IndexOf {
       }
 
     if(cont <= needle.length() - 1) exist = false;
-    return haystack.indexOf(needle) == (exist ? indexOf: -1);
+    return exist ? indexOf: -1;
   }
 }

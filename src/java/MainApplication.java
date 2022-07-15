@@ -1,22 +1,23 @@
-import easy_level.AddBinary;
-import easy_level.BuildArrayPermutation;
-import easy_level.ConcatenationArray;
-import easy_level.DefangingAnIPAddres;
-import easy_level.FinalValueOfVariableAfterPerformingOperations;
-import easy_level.IndexOf;
-import easy_level.IntegerPalindrome;
-import easy_level.LongPrefix;
-import easy_level.MostWordsFound;
-import easy_level.PlusOne;
-import easy_level.RemoveDuplicates;
-import easy_level.RemoveElementRepeated;
-import easy_level.RichestCustomer;
-import easy_level.RemoveOneElement;
-import easy_level.RunningSum;
-import easy_level.TreeNodeSum;
-import easy_level.TwoSum;
-import easy_level.ValidParentheses;
-import medium_level.ThreeSum;
+package java;
+
+import easyLevel.AddBinary;
+import easyLevel.BuildArrayPermutation;
+import easyLevel.ConcatenationArray;
+import easyLevel.DefangingAnIPAddres;
+import easyLevel.FinalValueOfVariableAfterPerformingOperations;
+import easyLevel.IndexOf;
+import easyLevel.IntegerPalindrome;
+import easyLevel.LongPrefix;
+import easyLevel.PlusOne;
+import easyLevel.RemoveDuplicates;
+import easyLevel.RemoveElementRepeated;
+import easyLevel.RichestCustomer;
+import easyLevel.RemoveOneElement;
+import easyLevel.RunningSum;
+import easyLevel.TreeNodeSum;
+import easyLevel.TwoSum;
+import easyLevel.ValidParentheses;
+import java.medium_level.ThreeSum;
 
 import java.util.Arrays;
 

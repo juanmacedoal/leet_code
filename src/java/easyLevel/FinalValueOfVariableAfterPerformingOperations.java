@@ -1,4 +1,4 @@
-package easy_level;
+package easyLevel;
 
 /**
  * There is a programming language with only four operations and one variable X:

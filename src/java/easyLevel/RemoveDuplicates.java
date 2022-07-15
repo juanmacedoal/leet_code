@@ -1,7 +1,7 @@
-package easy_level;
+package easyLevel;
 
 /**
- * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
+ *Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
  *
  * Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
  *
@@ -14,15 +14,12 @@ package easy_level;
  * The judge will test your solution with the following code:
  *
  * int[] nums = [...]; // Input array
- * int val = ...; // Value to remove
- * int[] expectedNums = [...]; // The expected answer with correct length.
- *                             // It is sorted with no values equaling val.
+ * int[] expectedNums = [...]; // The expected answer with correct length
  *
- * int k = removeElement(nums, val); // Calls your implementation
+ * int k = removeDuplicates(nums); // Calls your implementation
  *
  * assert k == expectedNums.length;
- * sort(nums, 0, k); // Sort the first k elements of nums
- * for (int i = 0; i < actualLength; i++) {
+ * for (int i = 0; i < k; i++) {
  *     assert nums[i] == expectedNums[i];
  * }
  * If all assertions pass, then your solution will be accepted.
@@ -31,20 +28,30 @@ package easy_level;
  *
  * Example 1:
  *
- * Input: nums = [3,2,2,3], val = 3
- * Output: 2, nums = [2,2,_,_]
- * Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+ * Input: nums = [1,1,2]
+ * Output: 2, nums = [1,2,_]
+ * Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
  * It does not matter what you leave beyond the returned k (hence they are underscores).
  */
-public class RemoveElementRepeated {
-  public int removeElement(int[] nums, int val) {
-    int j = 0;
-    for (int i = 0; i < nums.length; i++) {
-      if (nums[i] != val) {
-        nums[j] = nums[i];
-        j++;
+public class RemoveDuplicates {
+
+  public int removeDuplicates(int[] nums) {
+
+    int k = 0;
+    for(int i = 1; i < nums.length; i++){
+      int j = i;
+      if(i+1 <= nums.length && nums[i] == nums[i-1]) {
+        while(j < nums.length) {
+          int aux = nums[j];
+          nums[j] = nums[j-1];
+          nums[j-1] = aux;
+          j++;
+        }
       }
     }
-    return j;
+
+    return nums.length - k;
   }
 }
+
+

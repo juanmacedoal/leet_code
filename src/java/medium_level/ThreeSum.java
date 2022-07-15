@@ -1,4 +1,4 @@
-package medium_level;
+package java.medium_level;
 
 import java.util.ArrayList;
 import java.util.Arrays;

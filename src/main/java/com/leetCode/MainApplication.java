@@ -17,6 +17,7 @@ import com.leetCode.easyLevel.RunningSum;
 import com.leetCode.easyLevel.TreeNodeSum;
 import com.leetCode.easyLevel.TwoSum;
 import com.leetCode.easyLevel.ValidParentheses;
+import com.leetCode.mediumLevel.LongestSecuenceString;
 import com.leetCode.mediumLevel.ThreeSum;
 
 import javax.swing.*;
@@ -81,5 +82,6 @@ public class MainApplication {
     System.out.println("The result of removing duplicates: " + removeDuplicates.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
     System.out.println("The result of plusOne: " + new PlusOne().plusOne(new int[]{8,9,9,9}).equals(new int[]{1,0,0}));
     System.out.println("The result of add binary: " + new AddBinary().addBinary("100", "110010"));
+    System.out.println("The result of the longestSecuenceString: " + new LongestSecuenceString().lengthOfLongestSubstring("dvdf"));
   }
 }
